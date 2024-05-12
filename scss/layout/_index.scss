@@ -66,6 +66,13 @@ body {
         height: 600px;
     }
 }
+
+
+.videos-init {
+    width: 100%;
+    height: auto;
+}
+
 .presentacion {
     width: 100%;
     height: auto;
@@ -78,7 +85,10 @@ body {
 }
 
 .video1 {
+    
     text-align: center;
+    width: 350px;
+    height: 500px;
     
     h1, h2, h3{
        
@@ -92,5 +102,7 @@ body {
         width: 350px;
         height: 500px;
         border: 3px solid #000;
+        object-fit: cover;
+        overflow: hidden;
       }
 }

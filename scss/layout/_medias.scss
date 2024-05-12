@@ -10,6 +10,7 @@
     .navbar, .navbar-dark, .bg-dark, .fixed-top{
         display: block;
         margin: 10px;
+        position: static;
         
     }
     .bg-dark {
@@ -44,6 +45,12 @@
 
         a {
             color: #000;
+            transition: 0.7s;
+
+            &:hover {
+                color: #fff;
+                background-color: #000;
+            }
         }
       
     }
@@ -53,12 +60,21 @@
         max-width: 100%;
         height: auto;
         flex-direction: column;
+        flex-wrap: nowrap;
         align-items: center;
+        
+        
        
     }
     .video1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 350px;
+        height: 500px;
+        
        video {
-        width: 100%;
+        width: 350px;
         height: 500px;
        }
         h1, h2, h3 {
@@ -75,7 +91,7 @@
         video {
             width: 350px;
             height: 500px;
-            padding: 40px;
+            padding: 20px;
         }
         h1 {
             font-size: 18px;
@@ -108,4 +124,15 @@
             object-fit: cover;
         }
     }
+}
+
+@media only screen and (max-width: 450px){
+
+    .presentacion {
+        width: 100%;
+        max-width: 100%;
+        margin: auto 0;
+        
+    }
+    
 }

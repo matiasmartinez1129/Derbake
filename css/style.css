@@ -110,6 +110,31 @@ body {
   z-index: 200;
 }
 
+.ft-contain {
+  background-color: #412F26;
+}
+
+.footer h4 {
+  text-align: center;
+  color: #EDE1D2;
+}
+.footer h5 {
+  text-align: center;
+  font-size: 19px;
+  color: #EDE1D2;
+}
+
+.contain-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contain-icon i {
+  padding: 10px;
+  font-size: 22px;
+  color: #806044;
+}
+
 @media only screen and (max-width: 3500px) {
   .navbar, .navbar-dark, .bg-dark, .fixed-top {
     display: none;

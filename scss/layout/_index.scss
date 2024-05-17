@@ -1,7 +1,7 @@
 .header {
     display: flex;
     justify-content: space-between;
-    background-color: #000;
+    background-color: #412F26;
 }
 .palabra {
     padding: 10px;
@@ -11,10 +11,10 @@
     
 }
 .amarilla {
-    color: yellow;
+    color: #806044;
 }
 .negra {
-    color: #fff;
+    color: #EDE1D2;
 }
 .list-nav {
     list-style: none;
@@ -28,9 +28,9 @@
     a {
         color: #fff;
     text-decoration: none;
+    transition: 0.7s;
     &:hover {
-        background-color: yellow;
-        color: #000;
+        color: #806044;
     }
     }
    
@@ -38,10 +38,11 @@
 body {
     width: 100%;
     height: 100%;
-      background-image: url(../img/bg-image.jpg);
+      background-image: url(../../img/bg-fondo.jpg);
       background-size: cover;
-      background-repeat: no-repeat;
+      background-repeat: repeat;
       object-fit: cover;
+      background-position: left;
       
 	
 }
@@ -50,32 +51,24 @@ body {
     display: flex;
     flex-direction: column;
     padding: 80px;
-
-    h1 {
-        color: #fff;
-        padding-top: 20px;
-        font-size: 32px;
-        background-color: rgb(226, 226, 19);
     
-         
-        
-    }
 
     video {
         width: 100%;
         height: 600px;
+        
     }
 }
 
 
 .videos-init {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 .presentacion {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -88,7 +81,9 @@ body {
     
     text-align: center;
     width: 350px;
-    height: 500px;
+    height: 600px;
+    overflow: hidden;
+    
     
     h1, h2, h3{
        
@@ -105,4 +100,18 @@ body {
         object-fit: cover;
         overflow: hidden;
       }
+}
+
+.whatsapp {
+	position: fixed;
+	width: 60px;
+	height: 60px;
+	bottom: 40px;
+	right: 40px;
+	color: #806044;
+	text-align: center;
+	font-size: 60px;
+	z-index: 200;
+
+    
 }

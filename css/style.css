@@ -7,7 +7,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  background-color: #000;
+  background-color: #412F26;
 }
 
 .palabra {
@@ -19,11 +19,11 @@
 }
 
 .amarilla {
-  color: yellow;
+  color: #806044;
 }
 
 .negra {
-  color: #fff;
+  color: #EDE1D2;
 }
 
 .list-nav {
@@ -37,19 +37,20 @@
 .list-content a {
   color: #fff;
   text-decoration: none;
+  transition: 0.7s;
 }
 .list-content a:hover {
-  background-color: yellow;
-  color: #000;
+  color: #806044;
 }
 
 body {
   width: 100%;
   height: 100%;
-  background-image: url(../img/bg-image.jpg);
+  background-image: url(../../img/bg-fondo.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   object-fit: cover;
+  background-position: left;
 }
 
 .me-presento {
@@ -58,12 +59,6 @@ body {
   flex-direction: column;
   padding: 80px;
 }
-.me-presento h1 {
-  color: #fff;
-  padding-top: 20px;
-  font-size: 32px;
-  background-color: rgb(226, 226, 19);
-}
 .me-presento video {
   width: 100%;
   height: 600px;
@@ -71,12 +66,12 @@ body {
 
 .videos-init {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .presentacion {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -87,7 +82,8 @@ body {
 .video1 {
   text-align: center;
   width: 350px;
-  height: 500px;
+  height: 600px;
+  overflow: hidden;
 }
 .video1 h1, .video1 h2, .video1 h3 {
   color: #fff;
@@ -102,12 +98,31 @@ body {
   overflow: hidden;
 }
 
+.whatsapp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  color: #806044;
+  text-align: center;
+  font-size: 60px;
+  z-index: 200;
+}
+
 @media only screen and (max-width: 3500px) {
   .navbar, .navbar-dark, .bg-dark, .fixed-top {
     display: none;
   }
 }
 @media only screen and (max-width: 800px) {
+  body {
+    width: 100%;
+    height: 100%;
+    background-size: contain 10px 10px;
+    background-repeat: repeat;
+    background-position: center;
+  }
   .header {
     display: none;
   }
@@ -117,7 +132,7 @@ body {
     position: static;
   }
   .bg-dark {
-    background-color: #000 !important;
+    background-color: #412F26 !important;
   }
   .bg-color {
     width: 100%;
@@ -136,21 +151,20 @@ body {
     justify-content: space-between;
   }
   .offcanvas-body {
-    background-color: rgb(240, 240, 5);
+    background-color: #EDE1D2;
   }
   .offcanvas-header {
-    background-color: #000;
+    background-color: #806044;
   }
   .list-nav-mobile {
     color: #000;
   }
   .list-nav-mobile a {
-    color: #000;
+    color: #412F26;
     transition: 0.7s;
   }
   .list-nav-mobile a:hover {
-    color: #fff;
-    background-color: #000;
+    color: #806044;
   }
   .presentacion {
     padding-top: 100px;
@@ -225,6 +239,13 @@ body {
   align-items: center;
   padding: 20px;
   gap: 30px;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../img/bg-fondo.jpg);
+  background-size: cover 9px 9px;
+  background-repeat: repeat;
+  object-fit: cover;
+  background-position: center;
 }
 
 .caja {

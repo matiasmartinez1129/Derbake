@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aprendiendo Derbake</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  
+  <link rel="shortcut icon" href="img/favicon-derbake.jpg" type="image/x-icon">
     <script src="https://kit.fontawesome.com/83bd053065.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
   
 </head>
-<body class="bg-edit">
+<body>
     <header>
+      
         <nav>
         <div class="header">
         <div class="title-logo">
@@ -27,81 +28,83 @@
         </div>
         
       <ul class="list-nav">
-        <li class="list-content"><a href="">Inicio</a></li>
+        <li class="list-content"><a href="index.html">Inicio</a></li>
         <li class="list-content"><a href="html/aprendiendo.html">Aprendiendo</a></li>
         <li class="list-content"><a href="html/ritmos.html">Ritmos</a></li>
-        
+        <li class="list-content"><a href="html/metronomo.html">Metronomo</a></li>
+
         
       </ul>
         </div>
 
         </nav>
+        </header>
         
        
 
 
         
-        <nav class="navbar navbar-dark bg-dark fixed-top">
-
-            <div class="container-fluid">
-              <div class="nav-logo-botom">
-                <div class="palabra">
-                  <span class="letra amarilla">D</span>
-                  <span class="letra negra">E</span>
-                  <span class="letra amarilla">R</span>
-                  <span class="letra negra">B</span>
-                  <span class="letra amarilla">A</span>
-                  <span class="letra negra">K</span>
-                  <span class="letra amarilla">E</span>
-                </div>
-              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              </div>
-              <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
-                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                  <ul class="list-nav-mobile">
-                    <li class="list-content"><a href="index.html">Inicio</a></li>
-                    <li class="list-content"><a href="html/aprendiendo.html">Aprendiendo</a></li>
-                    <li class="list-content"><a href="html/ritmos.html">Ritmos</a></li>
-                  
-                
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </nav>
-    </header>
+       
 
 <main>
     
+
+  
+
+
    <section>
     <div class="me-presento">
       
-        <video src="" controls></video>
+        <video src="img/intro-web.mp4" controls></video>
       
     </div>
    </section>
 
 
+
+   <section>
+    <div class="container">
+        <div class="container-card">
+
+            <div class="card-personal">
+                <a href="#"><img src="img/foto-target.JPG" alt="Foto Personal"></a>
+                <h1>Matias Martinez</h1>
+                <h2>Derbakista</h2>
+            </div>  
+            <div class="descripcion ">
+                <p id="texto">
+                    Hola, soy Matias Martinez, un apasionado derbakista con 7 años de trayectoria en el arte de la percusión árabe. Desde que comencé mi viaje con el derbake, he desarrollado un profundo amor por los ritmos tradicionales de la música árabe y he perfeccionado mi habilidad para interpretar una amplia variedad de estilos, desde los ritmos más clásicos hasta los más contemporáneos. <br>
+
+                    A lo largo de estos años, he tenido la oportunidad de tocar en diversos escenarios, tanto en presentaciones en vivo como en eventos culturales, compartiendo la riqueza y el dinamismo del derbake con audiencias de todo tipo. Además, he participado en talleres y colaborado con músicos y bailarines, donde he podido expandir mi creatividad y aprendizaje. <br>
+                    
+                    Mi enfoque como derbakista va más allá de la técnica, buscando siempre transmitir la energía y la emoción de cada ritmo, conectando con la audiencia y llevando la magia de la música árabe a cada presentación.
+                </p>
+                <button id="verMasBtn" onclick="toggleTexto()">Ver más</button>
+                <div class="redes">
+                    <a href="https://www.instagram.com/mati.derbake/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@matiasmartinez5976"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
    <section class="videos-init">
     <div class="presentacion">
       <div class="video1">
-        <h1>Presentación del Derbake</h1>
-        <video src="img/presentacion-derbake.mp4" controls poster="img/derbake-poster.jpg"></video>
+        <h2>Presentación del Derbake</h2>
+        <video src="" controls></video>
       </div>
      
       <div class="video1">
-        <h2>Conociendo el Derbake</h2>
+        <h3>Conociendo el Derbake</h3>
         <video src="" controls></video>
       </div>
   
       <div class="video1">
-        <h3>Golpes basicos</h3>
+        <h4>Golpes basicos</h4>
         <video src="" controls></video>
       </div>
     </div>
@@ -114,20 +117,24 @@
 
 </main>
 
-<footer class="ft-contain">
+<footer>
   <div class="footer">
-      <h4>¡Si queres seguir aprendiendo, dejame un mensaje al Whatsapp o Correo!</h4>
+    
+      <h5>¡Si queres seguir aprendiendo, dejame un mensaje al Whatsapp o Correo!</h5>
       <div class="contain-icon">
         <a href="mailto:matiasmartinez.web@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
         <a href="https://wa.me/+542634873264" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
       </div>
       
-        <h5>Todos los derechos reservados</h5>
+        <h6>&copy; 2024 Aprendiendo Derbake. Todos los derechos reservados.</h6>
+    
   </div>
 </footer>
 <a href="https://wa.me/+542634873264" class="whatsapp" target="_blank"><i class="fa-brands fa-square-whatsapp"></i>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script src="js/metronomo.js"></script>
 </body>
 </html>

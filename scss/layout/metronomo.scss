@@ -1,0 +1,113 @@
+// Variables para colores y tamaños
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$font-color: #fff;
+$button-bg: #2980b9;
+$button-hover-bg: darken($button-bg, 10%);
+$beat-size: 4rem;
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  
+  font-size: 2rem;
+}
+
+label {
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+  color: $secondary-color;
+}
+
+input[type="number"] {
+  width: 70px;
+  padding: 0.5rem;
+  border: 2px solid $primary-color;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  background-color: $button-bg;
+  color: $font-color;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $button-hover-bg;
+  }
+}
+
+#beat {
+  margin-top: 2rem;
+  font-size: $beat-size;
+  transition: transform 0.1s ease;
+
+  // Añadir un efecto de latido cuando cambia a 🎵
+  &.active {
+    transform: scale(1.2);
+    color: $secondary-color;
+  }
+}
+
+.content-metronomo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px;
+    
+    h1 {
+      color: #fff;
+    }
+}
+  
+
+.ft-contain {
+  background-color: #ddd894;
+}
+
+.footer {
+  h4 {
+      text-align: center;
+      color: #000;
+
+  }
+
+  h5{
+      text-align: center;
+      font-size: 19px;
+      color: #000;
+  }
+
+}
+.footer{
+  padding: 20px;
+}
+.contain-icon {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #000 ;
+  padding: 0 20px 0 20px;
+  margin-bottom: 20px;
+ 
+  
+  i {
+      padding: 10px;
+      font-size: 22px;
+      color: #000;
+  }
+}

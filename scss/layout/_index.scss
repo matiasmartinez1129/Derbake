@@ -1,24 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cairo:wght@200..1000&display=swap');
+
+
+body{
+    background-image: url(../img/fondo-web-edit.jpg) !important;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
-    background-color: #412F26;
+    flex-direction: column;
+    padding: 40px;
+
 }
 .palabra {
     padding: 10px;
+    
 }
 .letra {
     font-size: 25px;
+    font-family: "amiri", sans-serif;
     
 }
 .amarilla {
-    color: #806044;
+    color: #fff;
 }
 .negra {
-    color: #EDE1D2;
+    color: #fff;
 }
 .list-nav {
     list-style: none;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    
     
     
 }
@@ -30,21 +47,14 @@
     text-decoration: none;
     transition: 0.7s;
     &:hover {
-        color: #806044;
+        color: rgba(128, 128, 128, 0.863);
     }
     }
    
 }
-body {
-    width: 100%;
-    height: 100%;
-      background-image: url(../img/bg-fondo.jpg);
-      background-size: cover;
-      background-repeat: repeat;
-      object-fit: cover;
-      background-position: left;
-      
-	
+
+.bg-section1 {
+    background-color: #000;
 }
 .me-presento {
     text-align: center;
@@ -61,36 +71,161 @@ body {
 }
 
 
+
+.bg-section2 {
+
+background-color: #171717;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    transition: 0.5s;
+    
+}
+
+.container-card {
+    display: flex;
+    width: 800px;
+    height: auto;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 1px 1px 4px 2px rgb(0, 0, 0, .2);
+    
+}
+
+.card-personal {
+    border-right: 1px solid #ddd ;
+    img {
+        width: 250px;
+        height: 200px;
+        border-radius: 50%;
+        box-shadow: 0 0 0 8px rgb(0,0,0, .06);
+        object-fit: cover;
+        margin: 20px 30px;
+        transition: .2s;
+
+    }
+    
+    
+    a {
+        position: relative;
+        display: block;
+    }
+
+    h1 {
+        font-size: 28px;
+        color: #806044;
+        margin-top: 20px;
+    }
+
+    h2{
+        font-size: 19px;
+        
+    }
+
+
+}
+
+.card-personal a:hover img {
+    box-shadow: 0 0 0 12px rgb(0, 0, 0, .1); 
+}
+
+.descripcion {
+    background-color: #fbfbfb;
+    position: relative;
+    max-height: 300px;
+    overflow-y: auto;
+
+    p {
+        max-height: 100px;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+    }
+    
+}
+
+.descripcion.expandido p {
+    max-height: 1000px; /* Se ajusta para que todo el contenido sea visible */
+}
+
+
+button {
+    
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;    
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.card-personal, .descripcion {
+    padding: 20px;
+    text-align: center;
+}
+
 .videos-init {
     width: 100%;
     height: 100%;
-}
-
-.presentacion {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: wrap;
-   padding: 40px;
    
 }
 
+
+
+.descripcion .redes {
+    margin-top: 25px;
+
+
+    a {
+        display: inline-block;
+        padding: 0 15px;
+        color: #806044;
+    }
+}
+
+
+
+
+
+
+
+.presentacion {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+    padding: 40px;
+   
+}
+
+
 .video1 {
-    
+    transition: 0.5s;
     text-align: center;
     width: 350px;
     height: 600px;
     overflow: hidden;
+    background-color: #000;
     
     
-    h1, h2, h3{
+    h1, h2, h3, h4{
        
        
         color: #fff;
         padding: 10px;
         font-size: 18px;
+        font-family: "amiri", sans-serif;
+      
        
        }
       video {
@@ -108,7 +243,7 @@ body {
 	height: 60px;
 	bottom: 40px;
 	right: 40px;
-	color: #806044;
+	color:  #25D366;
 	text-align: center;
 	font-size: 60px;
 	z-index: 200;
@@ -117,31 +252,69 @@ body {
 }
 
 .ft-contain {
-    background-color: #412F26;
+    background-image: url(../img/fondo-web.jpg);
     
 }
 .footer {
     h4 {
         text-align: center;
-        color: #EDE1D2;
+        color: #fff !important;
 
     }
 
     h5{
         text-align: center;
         font-size: 19px;
-        color: #EDE1D2;
+        color: #fff !important;
+    }
+
+    h6 {
+        text-align: center;
+        font-size: 16px;
+        color: #ffffffec;
     }
 
 }
+.footer{
+    padding: 20px;
+}
 .contain-icon {
-    display: flex;
+    display: inline-block;
     justify-content: center;
     align-items: center;
+    border: 2px solid #fff !important;
+    padding: 0 20px 0 20px;
+    margin-bottom: 20px;
+   
     
     i {
         padding: 10px;
         font-size: 22px;
-        color: #806044;
+        color: #fff !important;
     }
 }
+
+@keyframes show {
+	from {
+		opacity: 0;
+		scale: 25%;
+	}
+
+	to {
+		opacity: 1;
+		scale: 100%;
+	}
+}
+
+.container, .video1, .grid-item, .caja__content{
+	view-timeline-name: --image;
+	view-timeline-axis: block;
+
+	animation-timeline: --image;
+	animation-name: show;
+
+	animation-range: entry 25% cover 30%;
+	animation-fill-mode: both;
+    
+}
+

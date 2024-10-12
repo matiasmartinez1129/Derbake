@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+
+.bg-section-aprendiendo {
+    background-color: #000;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -21,6 +26,7 @@
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
+    transition: 0.5s;
     
 }
 
